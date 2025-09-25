@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Asraaz Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- GSAP and ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">            
+            <div class="logo">
+                <a href="#"><img src="./logo.jpg" alt="Asraaz Business Solutions" class="logo-img"> <span class="logo-text">ASRAAZ</span></a>
+            </div><div class="nav-links">
+                <div class="dropdown">
+                    <a href="#demos">Demos <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-grid">
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-icon restaurant">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="dropdown-text">
+                                    <div class="dropdown-title">Restaurant</div>
+                                    <div class="dropdown-subtitle">Single and multi-branch Restaurants</div>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-icon grocery">
+                                    <i class="fas fa-shopping-basket"></i>
+                                </div>
+                                <div class="dropdown-text">
+                                    <div class="dropdown-title">Grocery</div>
+                                    <div class="dropdown-subtitle">Single and multi-city Grocery</div>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-icon clothing">
+                                    <i class="fas fa-tshirt"></i>
+                                </div>
+                                <div class="dropdown-text">
+                                    <div class="dropdown-title">Clothing</div>
+                                    <div class="dropdown-subtitle">Online Apparel Store</div>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-icon beauty">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="dropdown-text">
+                                    <div class="dropdown-title">Beauty</div>
+                                    <div class="dropdown-subtitle">Beauty and Personal Care online store</div>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-icon jewelry">
+                                    <i class="fas fa-gem"></i>
+                                </div>
+                                <div class="dropdown-text">
+                                    <div class="dropdown-title">Jewelry</div>
+                                    <div class="dropdown-subtitle">Sell Jewelry and Accessories Online</div>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-icon pets">
+                                    <i class="fas fa-paw"></i>
+                                </div>
+                                <div class="dropdown-text">
+                                    <div class="dropdown-title">Pets</div>
+                                    <div class="dropdown-subtitle">Sell Pet Supplies Online</div>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-icon furniture">
+                                    <i class="fas fa-couch"></i>
+                                </div>
+                                <div class="dropdown-text">
+                                    <div class="dropdown-title">Furniture</div>
+                                    <div class="dropdown-subtitle">Sell Furniture Online</div>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-icon electronics">
+                                    <i class="fas fa-laptop"></i>
+                                </div>
+                                <div class="dropdown-text">
+                                    <div class="dropdown-title">Electronics</div>
+                                    <div class="dropdown-subtitle">Online store for electronics</div>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-icon toys">
+                                    <i class="fas fa-puzzle-piece"></i>
+                                </div>
+                                <div class="dropdown-text">
+                                    <div class="dropdown-title">Toys</div>
+                                    <div class="dropdown-subtitle">Online store for kids toys</div>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-icon bakery">
+                                    <i class="fas fa-birthday-cake"></i>
+                                </div>
+                                <div class="dropdown-text">
+                                    <div class="dropdown-title">Bakery</div>
+                                    <div class="dropdown-subtitle">Online store for bakery</div>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-icon pharmacy">
+                                    <i class="fas fa-pills"></i>
+                                </div>
+                                <div class="dropdown-text">
+                                    <div class="dropdown-title">Pharmacy</div>
+                                    <div class="dropdown-subtitle">Sell medicines online</div>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-icon meat">
+                                    <i class="fas fa-drumstick-bite"></i>
+                                </div>
+                                <div class="dropdown-text">
+                                    <div class="dropdown-title">Meat</div>
+                                    <div class="dropdown-subtitle">Bring your meat business online</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>                
+                </div>                  <a href="features.html">Features</a>
+                <a href="./pricing.html">Pricing</a>
+                <a href="./plugins.html">Plugins</a>
+                <!-- Affiliate Program link removed -->
+            </div>
+            <div class="nav-buttons">
+                <a href="#login" class="btn btn-secondary">Login</a>
+                <a href="#signup" class="btn btn-primary">Try for free →</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Launch Your Complete Ecommerce Store in <span class="gradient-text">Minutes</span></h1>
+                <p>One-time payment for your own branded mobile app, website, and delivery system.</p>
+                <p class="highlight-text">No monthly fees, 0% transaction fees <span class="light-text">No design or coding skills required.</span></p>
+                
+                <div class="hero-buttons">
+                    <a href="#trial" class="btn btn-primary">Start Your 14-Day Free Trial →</a>
+                    <a href="#demos" class="btn btn-outline">View Demos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Showcase Section -->
+    <section class="app-showcase">
+        <div class="container">
+            <div class="app-slider">
+                <!-- Original slides -->
+                <div class="app-slide">
+                    <img src="./img/ca67c2aca7366478cadc198ffb23264a7fb10fe3-1440x83442.jpg" alt="App Example 1">
+                </div>
+                <div class="app-slide">
+                    <img src="./img/1360d9422620b63848dd841a8e346b58e702fec3-1440x835484.jpg" alt="App Example 2">
+                </div>
+                <div class="app-slide">
+                    <img src="./img/1360d9422620b63848dd841a8e346b58e702fec3-1440x8385.jpg" alt="App Example 3">
+                </div>
+                <div class="app-slide">
+                    <img src="./img/2db849340bac150d6946cb5fb055a9e9748f7eeb-1440x8351536.jpg" alt="App Example 4">
+                </div>
+                <div class="app-slide">
+                    <img src="./img/2db849340bac150d6946cb5fb055a9e9748f7eeb-1440x8352153.jpg" alt="App Example 5">
+                </div>
+                <div class="app-slide">
+                    <img src="./img/303076a260143a13a0f12cb792a843d8817fa6bb-1440x835035.jpg" alt="App Example 6">
+                </div>
+                <div class="app-slide">
+                    <img src="./img/303076a260143a13a0f12cb792a843d8817fa6bb-1440x83548521.jpg" alt="App Example 7">
+                </div>
+                <div class="app-slide">
+                    <img src="./img/303076a260143a13a0f12cb792a843d8817fa6bb-1440x8355421.jpg" alt="App Example 8">
+                </div>
+                <div class="app-slide">
+                    <img src="./img/8cce64b5f6c68e5c0202c240178ac5ba577f6377-1440x835.jpg" alt="App Example 9">
+                </div>
+                <div class="app-slide">
+                    <img src="./img/8cce64b5f6c68e5c0202c240178ac5ba577f6377-1440x836.jpg" alt="App Example 10">
+                </div>
+                
+                <!-- Clone all slides for infinite loop effect -->
+                <div class="app-slide clone">
+                    <img src="./img/ca67c2aca7366478cadc198ffb23264a7fb10fe3-1440x83442.jpg" alt="App Example 1">
+                </div>
+                <div class="app-slide clone">
+                    <img src="./img/1360d9422620b63848dd841a8e346b58e702fec3-1440x835484.jpg" alt="App Example 2">
+                </div>
+                <div class="app-slide clone">
+                    <img src="./img/1360d9422620b63848dd841a8e346b58e702fec3-1440x8385.jpg" alt="App Example 3">
+                </div>
+                <div class="app-slide clone">
+                    <img src="./img/2db849340bac150d6946cb5fb055a9e9748f7eeb-1440x8351536.jpg" alt="App Example 4">
+                </div>
+                <div class="app-slide clone">
+                    <img src="./img/2db849340bac150d6946cb5fb055a9e9748f7eeb-1440x8352153.jpg" alt="App Example 5">
+                </div>
+                <div class="app-slide clone">
+                    <img src="./img/303076a260143a13a0f12cb792a843d8817fa6bb-1440x835035.jpg" alt="App Example 6">
+                </div>
+                <div class="app-slide clone">
+                    <img src="./img/303076a260143a13a0f12cb792a843d8817fa6bb-1440x83548521.jpg" alt="App Example 7">
+                </div>
+                <div class="app-slide clone">
+                    <img src="./img/303076a260143a13a0f12cb792a843d8817fa6bb-1440x8355421.jpg" alt="App Example 8">
+                </div>
+                <div class="app-slide clone">
+                    <img src="./img/8cce64b5f6c68e5c0202c240178ac5ba577f6377-1440x835.jpg" alt="App Example 9">
+                </div>
+                <div class="app-slide clone">
+                    <img src="./img/8cce64b5f6c68e5c0202c240178ac5ba577f6377-1440x836.jpg" alt="App Example 10">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-header">
+                <div class="features-badge">Why Asraaz Stands Out</div>
+                <h2 class="features-title">Features that make your business grow 🤩</h2>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-item">
+                    <div class="feature-image">
+                        <img src="./img/image-asset (4).jpeg" alt="Organize and Showcase Products">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Organize and Showcase Your Products</h3>
+                        <p>Present your inventory the way you want.</p>
+                        <ul class="feature-list">
+                            <li>Manage product variants and addons (multi-select options).</li>
+                            <li>Upload multiple product images, videos, and even 3D views.</li>
+                            <li>Real-time inventory tracking to prevent overselling.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-item">
+                    <div class="feature-image">
+                        <img src="./img/image-asset.jpeg" alt="Build Your Store">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Build Your Store, Your Way</h3>
+                        <p>Fully customizable with drag-and-drop simplicity.</p>
+                        <ul class="feature-list">
+                            <li>Drag-and-drop builder with grids, strips, and custom HTML/CSS.</li>
+                            <li>Infinite scroll for seamless browsing.</li>
+                            <li>Responsive design for all devices.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-item">
+                    <div class="feature-image">
+                        <img src="./img/image-asset (2).jpeg" alt="Payment Processing">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Seamless Payment Processing</h3>
+                        <p>Accept payments from anywhere in the world.</p>
+                        <ul class="feature-list">
+                            <li>Multiple payment gateway integrations.</li>
+                            <li>Secure checkout process with encryption.</li>
+                            <li>Support for various currencies and payment methods.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-item">
+                    <div class="feature-image">
+                        <img src="./img/image-asset (3).jpeg" alt="Order Management">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Efficient Order Management</h3>
+                        <p>Track and manage orders with ease.</p>
+                        <ul class="feature-list">
+                            <li>Real-time order notifications and updates.</li>
+                            <li>Automated order processing workflows.</li>
+                            <li>Detailed order history and analytics.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-item">
+                    <div class="feature-image">
+                        <img src="./img/image-asset (5).jpeg" alt="Marketing Tools">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Powerful Marketing Tools</h3>
+                        <p>Grow your customer base and increase sales.</p>
+                        <ul class="feature-list">
+                            <li>Email marketing campaigns and automation.</li>
+                            <li>Discount codes and promotional offers.</li>
+                            <li>Customer loyalty programs and referrals.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-item">
+                    <div class="feature-image">
+                        <img src="./img/image-asset (1).jpeg" alt="Analytics Dashboard">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Comprehensive Analytics</h3>
+                        <p>Make data-driven decisions for your business.</p>
+                        <ul class="feature-list">
+                            <li>Sales and revenue tracking with visual reports.</li>
+                            <li>Customer behavior and engagement metrics.</li>
+                            <li>Inventory performance and optimization suggestions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plugins Section -->
+    <section class="plugins-section">
+        <div class="container">
+            <div class="plugins-header">
+                <div class="plugins-badge">NEW</div>
+                <h2 class="plugins-title">Asraaz has 20+ powerful plugins</h2>
+            </div>
+            
+            <div class="plugins-slider">
+                <!-- Plugin 1 -->
+                <div class="plugin-item">
+                    <div class="plugin-icon">
+                        <img src="./img/IMG_0234.PNG" alt="Rewards and Ratings">
+                    </div>
+                    <div class="plugin-name">Rewards and Ratings</div>
+                </div>
+                
+                <!-- Plugin 2 -->
+                <div class="plugin-item">
+                    <div class="plugin-icon">
+                        <img src="./img/IMG_0235.PNG" alt="Reward Points">
+                    </div>
+                    <div class="plugin-name">Reward Points</div>
+                </div>
+                
+                <!-- Plugin 3 -->
+                <div class="plugin-item">
+                    <div class="plugin-icon">
+                        <img src="./img/IMG_0236.PNG" alt="Scratch Cards">
+                    </div>
+                    <div class="plugin-name">Scratch Cards</div>
+                </div>
+                
+                <!-- Plugin 4 -->
+                <div class="plugin-item">
+                    <div class="plugin-icon">
+                        <img src="./img/IMG_0237.PNG" alt="SEO Booster">
+                    </div>
+                    <div class="plugin-name">SEO Booster</div>
+                </div>
+                
+                <!-- Plugin 5 -->
+                <div class="plugin-item">
+                    <div class="plugin-icon">
+                        <img src="./img/IMG_0238.PNG" alt="Tawk to Chat">
+                    </div>
+                    <div class="plugin-name">Tawk to Chat</div>
+                </div>
+                
+                <!-- Plugin 6 -->
+                <div class="plugin-item">
+                    <div class="plugin-icon">
+                        <img src="./img/IMG_0239.PNG" alt="WhatsApp Chat">
+                    </div>
+                    <div class="plugin-name">WhatsApp Chat</div>
+                </div>
+                
+                <!-- Plugin 7 -->
+                <div class="plugin-item">
+                    <div class="plugin-icon">
+                        <img src="./img/IMG_0240.PNG" alt="Wheel of Popups">
+                    </div>
+                    <div class="plugin-name">Wheel of Popups</div>
+                </div>
+                
+                <!-- Plugin 8 -->
+                <div class="plugin-item">
+                    <div class="plugin-icon">
+                        <img src="plugin-cart.png" alt="Abandoned Cart Recovery">
+                    </div>
+                    <div class="plugin-name">Abandoned Cart Recovery</div>
+                </div>
+                
+                <!-- Plugin 9 -->
+                <div class="plugin-item">
+                    <div class="plugin-icon">
+                        <img src="plugin-cookie.png" alt="Cookie Consent">
+                    </div>
+                    <div class="plugin-name">Cookie Consent</div>
+                </div>
+                  <!-- Plugin 10 -->
+                <div class="plugin-item">
+                    <div class="plugin-icon">
+                        <img src="plugin-delivery.png" alt="Delivery Estimator">
+                    </div>
+                    <div class="plugin-name">Delivery Estimator</div>
+                </div>
+                
+                <!-- Clone all plugins for infinite loop effect -->
+                <div class="plugin-item clone">
+                    <div class="plugin-icon">
+                        <img src="./img/IMG_0234.PNG" alt="Rewards and Ratings">
+                    </div>
+                    <div class="plugin-name">Rewards and Ratings</div>
+                </div>
+                
+                <div class="plugin-item clone">
+                    <div class="plugin-icon">
+                        <img src="./img/IMG_0235.PNG" alt="Reward Points">
+                    </div>
+                    <div class="plugin-name">Reward Points</div>
+                </div>
+                
+                <div class="plugin-item clone">
+                    <div class="plugin-icon">
+                        <img src="./img/IMG_0236.PNG" alt="Scratch Cards">
+                    </div>
+                    <div class="plugin-name">Scratch Cards</div>
+                </div>
+                
+                <div class="plugin-item clone">
+                    <div class="plugin-icon">
+                        <img src="./img/IMG_0237.PNG" alt="SEO Booster">
+                    </div>
+                    <div class="plugin-name">SEO Booster</div>
+                </div>
+                
+                <div class="plugin-item clone">
+                    <div class="plugin-icon">
+                        <img src="./img/IMG_0238.PNG" alt="Tawk to Chat">
+                    </div>
+                    <div class="plugin-name">Tawk to Chat</div>
+                </div>
+                
+                <div class="plugin-item clone">
+                    <div class="plugin-icon">
+                        <img src="./img/IMG_0239.PNG" alt="WhatsApp Chat">
+                    </div>
+                    <div class="plugin-name">WhatsApp Chat</div>
+                </div>
+                
+                <div class="plugin-item clone">
+                    <div class="plugin-icon">
+                        <img src="./img/IMG_0240.PNG" alt="Wheel of Popups">
+                    </div>
+                    <div class="plugin-name">Wheel of Popups</div>
+                </div>
+                
+                <div class="plugin-item clone">
+                    <div class="plugin-icon">
+                        <img src="plugin-cart.png" alt="Abandoned Cart Recovery">
+                    </div>
+                    <div class="plugin-name">Abandoned Cart Recovery</div>
+                </div>
+                
+                <div class="plugin-item clone">
+                    <div class="plugin-icon">
+                        <img src="plugin-cookie.png" alt="Cookie Consent">
+                    </div>
+                    <div class="plugin-name">Cookie Consent</div>
+                </div>
+                
+                <div class="plugin-item clone">
+                    <div class="plugin-icon">
+                        <img src="plugin-delivery.png" alt="Delivery Estimator">
+                    </div>
+                    <div class="plugin-name">Delivery Estimator</div>
+                </div>            </div>
+        </div>
+    </section>
+
+    <!-- Powering D2C Brands Section -->
+    <section class="d2c-brands-section">
+        <div class="container">
+            <h2 class="d2c-title">Powering D2C Brands</h2>
+            <p class="d2c-subtitle">Whether you're launching your store or scaling up, our solutions are built to grow with you, adapting seamlessly to your business needs.</p>
+            
+            <div class="stats-container">
+                <div class="stat-item">
+                    <!-- Image removed -->
+                    <div class="stat-number gradient-stat">1 Lakh <span class="plus">+</span></div>
+                    <div class="stat-label">customers served monthly</div>
+                    <div class="stat-description">Smooth, reliable shopping powered by Asraaz for D2C brands across India.</div>
+                </div>
+                
+                <div class="stat-item">
+                    <!-- Image removed -->
+                    <div class="stat-number gradient-stat">0%</div>
+                    <div class="stat-label">Transaction Fees</div>
+                    <div class="stat-description">Keep your margins high and save over ₹50,000 every month</div>
+                </div>
+                
+                <div class="stat-item">
+                    <!-- Image removed -->
+                    <div class="stat-number gradient-stat">2X Conversion</div>
+                    <div class="stat-label">on choosing Asraaz vs others</div>
+                    <div class="stat-description">Reduce drop-offs and turn more visitors into buyers.</div>
+                </div>
+            </div>        </div>
+    </section>    <!-- New Stacking Cards Section -->
+    <section class="new-stacking-cards-section">
+        <div class="container">
+            <div class="new-stacking-cards-header">
+                <div class="new-stacking-cards-badge">Solutions</div>
+                <h2 class="new-stacking-cards-title">Comprehensive E-commerce Solutions</h2>
+                <p class="new-stacking-cards-subtitle">Discover how our platform transforms your business with innovative features and seamless integrations.</p>
+            </div>
+            
+            <div class="new-stacking-cards-container">
+                <div class="new-stacking-card" id="new-card-1">
+                    <div class="new-card-content">
+                        <div class="new-card-number">01</div>
+                        <h3 class="new-card-title">Advanced Analytics Dashboard</h3>
+                        <p class="new-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        <a href="#" class="new-card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="new-card-image">
+                        <img src="./img/image-asset.jpeg" alt="Analytics Dashboard">
+                    </div>
+                </div>
+                
+                <div class="new-stacking-card" id="new-card-2">
+                    <div class="new-card-content">
+                        <div class="new-card-number">02</div>
+                        <h3 class="new-card-title">Smart Inventory Management</h3>
+                        <p class="new-card-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                        <a href="#" class="new-card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="new-card-image">
+                        <img src="./img/image-asset (1).jpeg" alt="Inventory Management">
+                    </div>
+                </div>
+                
+                <div class="new-stacking-card" id="new-card-3">
+                    <div class="new-card-content">
+                        <div class="new-card-number">03</div>
+                        <h3 class="new-card-title">Customer Engagement Tools</h3>
+                        <p class="new-card-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
+                        <a href="#" class="new-card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="new-card-image">
+                        <img src="./img/image-asset (2).jpeg" alt="Customer Engagement">
+                    </div>
+                </div>
+                
+                <div class="new-stacking-card" id="new-card-4">
+                    <div class="new-card-content">
+                        <div class="new-card-number">04</div>
+                        <h3 class="new-card-title">Multi-channel Integration</h3>
+                        <p class="new-card-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+                        <a href="#" class="new-card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="new-card-image">
+                        <img src="./img/image-asset (3).jpeg" alt="Multi-channel Integration">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Counter Section -->
+    <section class="stats-counter-section">
+        <div class="container">
+            <h2 class="stats-counter-title">Our Impact in Numbers</h2>
+            <p class="stats-counter-subtitle">Real results that speak for themselves</p>
+            
+            <div class="stats-counter-grid">
+                <div class="stats-counter-item">
+                    <div class="counter-value" data-target="100000">0</div>
+                    <div class="counter-label">Happy Customers</div>
+                </div>
+                
+                <div class="stats-counter-item">
+                    <div class="counter-value" data-target="5000">0</div>
+                    <div class="counter-label">Stores Launched</div>
+                </div>
+                
+                <div class="stats-counter-item">
+                    <div class="counter-value" data-target="99">0</div>
+                    <div class="counter-suffix">%</div>
+                    <div class="counter-label">Uptime Reliability</div>
+                </div>
+                  <div class="stats-counter-item">
+                    <div class="counter-value" data-target="24">0</div>
+                    <div class="counter-label">Hour Support</div>
+                </div>
+            </div>
+        </div>
+    </section>    <!-- Website Templates Section -->
+    <section class="templates-section">
+        <div class="container">
+            <div class="templates-header">
+                <h2 class="templates-title">Website Templates, Made Easy.</h2>
+                <p class="templates-subtitle">Explore responsive, stunning customizable website template designs tailored to thrive in your industry.</p>
+                <a href="#" class="templates-cta">
+                    Create Your Website Now 
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="templates-grid">
+                <div class="template-card" data-template="portfolio">
+                    <div class="template-image">
+                        <img src="img/8cce64b5f6c68e5c0202c240178ac5ba577f6377-1440x835.jpg" alt="Portfolio Template" />
+                        <div class="template-overlay">
+                            <button class="view-template-btn" data-template="portfolio">
+                                <i class="fas fa-expand"></i>
+                                View Template
+                            </button>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3 class="template-name">Portfolio</h3>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-template="event">
+                    <div class="template-image">
+                        <img src="img/2db849340bac150d6946cb5fb055a9e9748f7eeb-1440x8351536.jpg" alt="Event Template" />
+                        <div class="template-overlay">
+                            <button class="view-template-btn" data-template="event">
+                                <i class="fas fa-expand"></i>
+                                View Template
+                            </button>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3 class="template-name">Event</h3>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-template="business">
+                    <div class="template-image">
+                        <img src="img/303076a260143a13a0f12cb792a843d8817fa6bb-1440x835035.jpg" alt="Business Template" />
+                        <div class="template-overlay">
+                            <button class="view-template-btn" data-template="business">
+                                <i class="fas fa-expand"></i>
+                                View Template
+                            </button>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3 class="template-name">Business</h3>
+                    </div>
+                </div>
+                
+                <div class="template-card" data-template="store">
+                    <div class="template-image">
+                        <img src="img/1360d9422620b63848dd841a8e346b58e702fec3-1440x835484.jpg" alt="Store Template" />
+                        <div class="template-overlay">
+                            <button class="view-template-btn" data-template="store">
+                                <i class="fas fa-expand"></i>
+                                View Template
+                            </button>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3 class="template-name">Store</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Template Modal -->
+    <div class="template-modal" id="templateModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-image-container">
+                <img id="modalImage" src="" alt="Template Preview" />
+            </div>
+            <div class="modal-info">
+                <h3 id="modalTitle">Template Name</h3>
+                <p id="modalDescription">Template description</p>
+                <div class="modal-actions">
+                    <button class="btn btn-primary modal-btn">Use This Template</button>
+                    <button class="btn btn-secondary modal-btn">Live Preview</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="testimonials-header">
+                <div class="testimonials-badge">Testimonials</div>
+                <h2 class="testimonials-title">See Why Store Owners Love Asraaz <span class="emoji">😍</span></h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 - Large -->
+                <div class="testimonial-card large">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Zepio made starting my jewelry store so easy! The templates are beautiful, and I could customize everything without any problem. They keep adding new features, and the support team is always there to help. Totally recommend it for anyone wanting to sell online!"</p>
+                        <div class="testimonial-author">
+                            <img src="avatar-anjali.jpg" alt="Anjali Mehra" class="author-avatar">
+                            <div class="author-info">
+                                <div class="author-name">Anjali Mehra</div>
+                                <div class="author-business">@Shimmer Stones</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 - Small -->
+                <div class="testimonial-card small">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"The website for my restaurant with multiple branches was so simple to set up! Everything is easy to use and works perfectly for us."</p>
+                        <div class="testimonial-author">
+                            <img src="avatar-manjunath.jpg" alt="S.M Manjunath" class="author-avatar">
+                            <div class="author-info">
+                                <div class="author-name">S.M Manjunath</div>
+                                <div class="author-business">@Tandoori Express</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 - Small -->
+                <div class="testimonial-card small">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"My store looks amazing, and setting it up was actually fun! The drag-and-drop tool is super easy to use. Love it!"</p>
+                        <div class="testimonial-author">
+                            <img src="avatar-pooja.jpg" alt="Pooja" class="author-avatar">
+                            <div class="author-info">
+                                <div class="author-name">Pooja</div>
+                                <div class="author-business">@Playtown</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 - Small -->
+                <div class="testimonial-card small">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Zepio is super simple! Notifications bhi instantly jaate hain. Sellers aur buyers ke liye mass experience!"</p>
+                        <div class="testimonial-author">
+                            <img src="avatar-aarav.jpg" alt="Aarav" class="author-avatar">
+                            <div class="author-info">
+                                <div class="author-name">Aarav</div>
+                                <div class="author-business">@Trendy Totes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 5 - Small -->
+                <div class="testimonial-card small">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"My Instagram sales shot up with Zepio! The mobile site is so good, customers keep coming back."</p>
+                        <div class="testimonial-author">
+                            <img src="avatar-priya.jpg" alt="Priya S." class="author-avatar">
+                            <div class="author-info">
+                                <div class="author-name">Priya S.</div>
+                                <div class="author-business">@ShineBright</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional testimonials can be added following the same pattern -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h3>Pages</h3>
+                        <ul>
+                            <li><a href="features.html">Features</a></li>
+                            <li><a href="#plugins">Plugins</a></li>
+                            <li><a href="#demos">Demos</a></li>
+                            <li><a href="#compare">Compare</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="#signup">Sign-up</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#community">Community Forum</a></li>
+                            <li><a href="#api">API Status</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#terms">Terms</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>            <div class="footer-bottom">
+                <div class="gradient-line"></div>
+            </div>        </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
